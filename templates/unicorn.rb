@@ -1,4 +1,4 @@
-if Rails.env == "development"
+if ENV["RAILS_ENV"] == "development"
   port = 3000
 else
   port = ENV["PORT"].to_i
