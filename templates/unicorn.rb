@@ -1,7 +1,7 @@
-if ENV["RAILS_ENV"] == "development"
-  port = 3000
-else
+if ENV["RAILS_ENV"] == "production"
   port = ENV["PORT"].to_i
+else
+  port = 3000
 end
 
 listen port, :tcp_nopush => false  
