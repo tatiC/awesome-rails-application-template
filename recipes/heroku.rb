@@ -5,6 +5,6 @@ git :remote => "rm heroku"
 git :remote => "add heroku git@official.heroku.com:#{app_name.dasherize}.git"
 git :push => "heroku master"
 
-run "heroku run rake db:migrate"
-run "heroku run rake db:seed"
+run "heroku run rake db:migrate --app #{app_name.dasherize}"
+run "heroku run rake db:seed --app #{app_name.dasherize}"
 run "heroku open --app #{app_name.dasherize}"
