@@ -1,0 +1,1 @@
+run "open \"http://#{app_name.dasherize}.herokuapp.com/users/sign_in\""

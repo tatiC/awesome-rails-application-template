@@ -7,4 +7,3 @@ git :push => "heroku master"
 
 run "heroku run rake db:migrate --app #{app_name.dasherize}"
 run "heroku run rake db:seed --app #{app_name.dasherize}"
-run "heroku open --app #{app_name.dasherize}"
