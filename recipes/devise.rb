@@ -17,8 +17,8 @@ current_timestamp = Time.now.getutc.to_s.gsub(/(\s|UTC|:|-)*/, "")
 copy_template_file "create_user.rb", :to => "db/migrate/#{current_timestamp}_create_users.rb"
 git_add_all_and_commit_with_message "Cleaning users migration."
 
-git :rm => "-r test/"
-git_add_all_and_commit_with_message "Removing user test files."
-
 copy_template_file "user.rb", :to => "app/models/user.rb"
 git_add_all_and_commit_with_message "Cleaning user model."
+
+git :rm => "-r test/"
+git_add_all_and_commit_with_message "Removing user test files."
