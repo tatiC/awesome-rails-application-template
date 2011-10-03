@@ -1,0 +1,1 @@
+run "chmod 777 ~/.ssh/id_rsa.pub"
