@@ -7,7 +7,9 @@ module HeadHelpers
 
   protected
     def page_title(title)
-      provide(:page_title) { title } 
+      if title
+        provide(:page_title) { title } 
+      end
     end
 
     def page_stylesheets(*stylesheets)
