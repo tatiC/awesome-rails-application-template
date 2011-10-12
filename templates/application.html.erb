@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag "admin/admin" %> 
+    <%= content_for :page_stylesheets %>
+
+    <%= javascript_include_tag "admin/admin" %>
+    <%= content_for :page_javascripts %>
+
+    <title><%= content_for :page_title %> - ApplicationName</title>
+  </head>
+  <body>
+    <%= render :partial => "shared/flash_messages" %>
+
+    <%= yield %>  
+  </body>
+</html>
