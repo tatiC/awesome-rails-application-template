@@ -1,0 +1,23 @@
+<% if not notice.blank? %>
+  <div class="message success">
+    <p><%= notice %></p>
+  </div>
+<% end %>
+
+<% if not flash[:info].blank? %>
+  <div class="message info">
+    <p><%= flash[:info] %></p>
+  </div>
+<% end %>
+
+<% if not flash[:warning].blank? %>
+  <div class="message warning">
+    <p><%= flash[:warning] %></p>
+  </div>
+<% end %>
+
+<% if not alert.blank? %>
+  <div class="message errormsg">
+    <p><%= alert %></p>
+  </div>
+<% end %>
