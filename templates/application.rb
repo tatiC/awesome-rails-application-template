@@ -15,7 +15,6 @@ module ApplicationName
 
     config.encoding = "utf-8"    
     config.active_record.identity_map = true
-    config.filter_parameters += [:password, :password_confirmation]
     
     config.assets.enabled = true
     config.assets.version = "1.0"
